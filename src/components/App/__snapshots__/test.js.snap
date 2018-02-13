@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App has a valid snapshot? 1`] = `
+<div>
+  <div
+    className="search"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <input
+        onChange={[Function]}
+        type="text"
+        value="redux"
+      />
+      <button
+        type="submit"
+      >
+        Search on Hacker News
+      </button>
+    </form>
+  </div>
+  <div>
+    <div
+      className="list"
+    >
+      <span
+        className="column1"
+      >
+        Delete
+      </span>
+      <span
+        className="column2"
+      >
+        <button
+          className="sort-button"
+          onClick={[Function]}
+          type="button"
+        >
+          TITLE
+        </button>
+      </span>
+      <span
+        className="column3"
+      >
+        <button
+          className="sort-button"
+          onClick={[Function]}
+          type="button"
+        >
+          AUTHOR
+        </button>
+      </span>
+      <span
+        className="column4"
+      >
+        <button
+          className="sort-button"
+          onClick={[Function]}
+          type="button"
+        >
+          COMMENTS
+        </button>
+      </span>
+      <span
+        className="column5"
+      >
+        <button
+          className="sort-button"
+          onClick={[Function]}
+          type="button"
+        >
+          POINTS
+        </button>
+      </span>
+    </div>
+  </div>
+  <div
+    className="loading-more"
+  >
+    <div
+      className="is-loading"
+    >
+      Loading ...
+    </div>
+  </div>
+</div>
+`;

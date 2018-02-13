@@ -23,19 +23,10 @@ class App extends Component {
       searchKey: DEFAULT_QUERY,
       searchTerm: DEFAULT_QUERY,
       error: null,
-      isLoading: false,
-      sortKey: "NONE",
-      isReverseSort: false
+      isLoading: false
     };
   }
-  onSort = sortKey => {
-    const isReverseSort =
-      this.state.sortKey === sortKey && !this.state.isReverseSort;
-    this.setState({
-      sortKey,
-      isReverseSort
-    });
-  };
+
   setSearchTopStories = result => {
     const { hits, page } = result;
     const { searchKey, results } = this.state;
@@ -115,6 +106,31 @@ class App extends Component {
       (results && results[searchKey] && results[searchKey].hits) || [];
     return (
       <div>
+        <h3>
+          A few good points for me to remember during making this simple
+          Hackernews web client:
+        </h3>
+        <ol>
+          <li>
+            Client Side Cache Result: search "123" and change to "456" then
+            search "123" again.
+          </li>
+          <li>
+            Sorting list technique: Click the green label such as "Title",
+            "COMMENTS".....
+          </li>
+          <li>
+            Higher Order Function technique used: the bttom "Load 3 more" button
+            is &lt;ButtonWithLoading&gt; component, which is a new component
+            return by &lt;withLoading&gt;( High Order Component )
+          </li>
+          <li>
+            Credit to this awesome free book{" "}
+            <a href="https://github.com/the-road-to-learn-react/the-road-to-learn-react">
+              "The Road To learn React"{" "}
+            </a>
+          </li>
+        </ol>
         <Search
           searchTerm={searchTerm}
           onSearchChange={this.onSearchChange}
@@ -126,18 +142,13 @@ class App extends Component {
         {error ? (
           <h1> Error Occured !! </h1>
         ) : (
-          <Table
-            list={list}
-            sortKey={this.state.sortKey}
-            onSort={this.onSort}
-            isReverseSort={this.state.isReverseSort}
-            onDismiss={this.onDismiss}
-          />
+          <Table list={list} onDismiss={this.onDismiss} />
         )}
 
         <div className="loading-more">
           <ButtonWithLoading
             isLoading={this.state.isLoading}
+            className={"button"}
             onClick={() => {
               this.fetchSearchTopStories(searchTerm, page + 1, 3);
             }}

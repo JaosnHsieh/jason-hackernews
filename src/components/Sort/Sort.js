@@ -1,13 +1,12 @@
 import React from "react";
-import Button from "../Button";
 const Sort = ({ onSort, sortKey, children, activeSortKey, isReverseSort }) => {
-  const sortClasses = ["sort-button"];
+  const sortClasses = ["button"];
   const isActive = sortKey === activeSortKey;
   if (isActive) {
     sortClasses.push("active");
   }
   return (
-    <Button
+    <a
       onClick={() => {
         onSort(sortKey);
       }}
@@ -15,7 +14,7 @@ const Sort = ({ onSort, sortKey, children, activeSortKey, isReverseSort }) => {
     >
       {isActive ? (isReverseSort ? "↑" : "↓") : null}
       {children}
-    </Button>
+    </a>
   );
 };
 

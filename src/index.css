@@ -11,7 +11,8 @@ div.search {
 div.list {
   margin: 20px;
   padding: 10px;
-  border: 2px solid black;
+  border: 1px solid black;
+  border-radius: 5px;
   box-sizing: border-box;
 }
 div.list span {
@@ -47,4 +48,31 @@ div.loading-more {
 div.is-loading {
   margin: 0 auto;
   width: 50%;
+}
+.button {
+  background-color: ForestGreen;
+  border-radius: 5px;
+  color: white;
+  padding: 0.3em;
+  text-decoration: none;
+  font-size: 0.1em;
+}
+
+.button:focus,
+.button:hover {
+  background-color: DarkGreen;
+}
+
+.button-delete {
+  background-color: rgb(226, 19, 19);
+  border-radius: 5px;
+  color: white;
+  padding: 0.5em;
+  text-decoration: none;
+  font-size: 0.5em;
+}
+
+.button-delete:focus,
+.button-delete:hover {
+  background-color: rgb(226, 19, 19);
 }

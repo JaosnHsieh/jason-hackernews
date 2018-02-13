@@ -5,61 +5,153 @@ exports[`Table has a valid snapshot? 1`] = `
   <div
     className="list"
   >
-    <button
-      className=""
-      onClick={[Function]}
-      type="button"
+    <span
+      className="column1"
     >
-      X
-    </button>
-    <span>
-      title1
+      Delete
     </span>
-    <span>
-      jason1
+    <span
+      className="column2"
+    >
+      <button
+        className="sort-button"
+        onClick={[Function]}
+        type="button"
+      >
+        TITLE
+      </button>
     </span>
-    <span>
-      100
+    <span
+      className="column3"
+    >
+      <button
+        className="sort-button"
+        onClick={[Function]}
+        type="button"
+      >
+        AUTHOR
+      </button>
+    </span>
+    <span
+      className="column4"
+    >
+      <button
+        className="sort-button"
+        onClick={[Function]}
+        type="button"
+      >
+        COMMENTS
+      </button>
+    </span>
+    <span
+      className="column5"
+    >
+      <button
+        className="sort-button"
+        onClick={[Function]}
+        type="button"
+      >
+        POINTS
+      </button>
     </span>
   </div>
   <div
     className="list"
   >
-    <button
-      className=""
-      onClick={[Function]}
-      type="button"
+    <span
+      className="column1"
     >
-      X
-    </button>
-    <span>
+      <button
+        className=""
+        onClick={[Function]}
+        type="button"
+      >
+        X
+      </button>
+    </span>
+    <span
+      className="column2"
+    >
+      title3
+    </span>
+    <span
+      className="column3"
+    >
+      jason3
+    </span>
+    <span
+      className="column4"
+    />
+    <span
+      className="column5"
+    >
+      102
+    </span>
+  </div>
+  <div
+    className="list"
+  >
+    <span
+      className="column1"
+    >
+      <button
+        className=""
+        onClick={[Function]}
+        type="button"
+      >
+        X
+      </button>
+    </span>
+    <span
+      className="column2"
+    >
       title2
     </span>
-    <span>
+    <span
+      className="column3"
+    >
       jason2
     </span>
-    <span>
+    <span
+      className="column4"
+    />
+    <span
+      className="column5"
+    >
       101
     </span>
   </div>
   <div
     className="list"
   >
-    <button
-      className=""
-      onClick={[Function]}
-      type="button"
+    <span
+      className="column1"
     >
-      X
-    </button>
-    <span>
-      title3
+      <button
+        className=""
+        onClick={[Function]}
+        type="button"
+      >
+        X
+      </button>
     </span>
-    <span>
-      jason3
+    <span
+      className="column2"
+    >
+      title1
     </span>
-    <span>
-      102
+    <span
+      className="column3"
+    >
+      jason1
+    </span>
+    <span
+      className="column4"
+    />
+    <span
+      className="column5"
+    >
+      100
     </span>
   </div>
 </div>

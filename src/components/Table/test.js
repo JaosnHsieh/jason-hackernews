@@ -14,19 +14,19 @@ describe("Table", () => {
         objectID: "objid-test1",
         title: "title1",
         author: "jason1",
-        points: "100"
+        points: 100
       },
       {
         objectID: "objid-test2",
         title: "title2",
         author: "jason2",
-        points: "101"
+        points: 101
       },
       {
         objectID: "objid-test3",
         title: "title3",
         author: "jason3",
-        points: "102"
+        points: 102
       }
     ]
   };
@@ -44,6 +44,6 @@ describe("Table", () => {
 
   it("show 3 items in the list", () => {
     const element = shallow(<Table {...props} />);
-    expect(element.find("div.list").length).toBe(props.list.length);
+    expect(element.find("div.list").length).toBe(props.list.length + 1); // +1 is for Table-header
   });
 });
